@@ -14,5 +14,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### Songs List
-Calling Api from RapidAPI and then genius song lyrics api to get the list of song and show their title detail in separate column/component
+### Song List
+
+Calling RapidAPI Genius lyrics for songs to get their song names.
+
+### Furthermore
+
+By clicking on button this also give name of song in separate 'place holder segment'/"Details For"

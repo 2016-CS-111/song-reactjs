@@ -10,11 +10,6 @@ class App extends React.Component {
         this.setState({ selectedSong: song })
     };
 
-    onWidthChange = (width) => {
-        const processedWidth = Math.ceil(width + width/10);
-        console.log(processedWidth);
-    }
-
     componentDidMount= async () => {
         const response = await Rapid.get('artists/16775/songs');
         this.setState({ 
@@ -31,8 +26,8 @@ class App extends React.Component {
                         <div className='ten wide column'>
                             <SongList songs={this.state.songs} onSelectSong={this.onSelectSong} />
                         </div>
-                        <div className='six wide column' style={{ height: processedWidth }}>
-                            <SongDetail selectedSong={this.state.selectedSong} onWidthChange={this.onWidthChange} />
+                        <div className='six wide column'>
+                            <SongDetail selectedSong={this.state.selectedSong} />
                         </div>
                     </div>
                 </div>
